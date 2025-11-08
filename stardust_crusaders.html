@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardust Crusaders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+     <div class="logo fade-in">
+    <a href="index.html">
+    <img src="images/logo.svg" alt="Лого">
+    </a>
+  </div>
+
+  <nav class="menu fade-in" id="menu">
+    <a href="index.html">Головна</a>
+      <div class="menu-item">
+    <a href="jojo.html">Джоджо ▾</a>
+    <div class="dropdown">
+      <a href="phantom_blood.html">Phantom Blood</a>
+      <a href="battle_tendency.html">Battle Tendency</a>
+      <a href="stardust_crusaders.html">Stardust Crusaders</a>
+      <a href="diamond_unbreakable.html">Diamond is Unbreakable</a>
+      <a href="golden_wind.html">Golden Wind</a>
+      <a href="stone_ocean.html">Stone Ocean</a>
+      <a href="steel_ball_run.html">Steel Ball Run</a>
+      <a href="jojolion.html">JoJolion</a>
+      <a href="jojolands.html">JoJolands</a>
+    </div>
+  </div>
+    <a href="about.html">Про мене</a>
+    <a href="brand.html">Бренди</a>
+  </nav>
+    </header>
+<section class="Anime">
+  <div class="container">
+    <div class="anime-content">
+      <div class="anime-text">
+        <h2>Stardust Crusaders</h2>
+        <p>
+          Третя частина франшизи манґи JoJo's Bizarre Adventure авторства Хірохіко Аракі. 
+          Серії публікувалися в журналі Weekly Shonen Jump з 1989 до 1992 року. 
+          Усього було випущено 152 глави манґи, які були зібрані у 16 томів. 
+          Сюжет Stardust Crusaders відбувається після Battle Tendency і передує Diamond Is Unbreakable.
+        </p><br>
+        <h3>Сюжет</h3>
+        <p>
+          Дія відбувається з 1987 по 1988 рік. 
+          Моряки витягують труну з тілом Діо Брандо, що лежала на дні Атлантичного океану більше 100 років. 
+          Він оживає та вбиває моряків. Стає ясно, що Діо зумів захопити тіло Джонатана, яким замінив своє раніше знищене. 
+          З цієї причини у всіх нащадків Джонатана з'являються «стенди» (яп. スタンド, сутандо) — істоти, що є втіленням духовної сутності, волі людини і володіють різними здібностями. 
+          Їх отримують Джозеф Джостар, його донька Холлі Куджо та онук Джотаро Куджо. 
+          Холлі, однак, не може впоратися зі своєю новою силою і починає повільно вмирати, за прогнозами лікарів, вона повинна померти приблизно через 50 днів. 
+          Єдиний спосіб врятувати Холлі — вбити Діо до закінчення цього терміну. 
+          Постарілий Джозеф шукає допомоги у свого онука Джотаро, щоб разом з ним вирушити до Єгипту і якнайшвидше вбити Діо. 
+          До них приєднуються Мохаммед Абдул, Норіакі Кокеїн, Жан-П'єр Польнарефф та собака Іґґі. 
+          Разом вони борються проти Діо та його підлеглих, подорожуючи країнами Південної Азії та Близького Сходу, такими як Сінгапур, Індія, Пакистан, Саудівська Аравія та Єгипет.
+        </p>
+      </div>
+
+      <div class="anime-image">
+        <audio id="sound">
+          <source src="sounds/part3.mp3" type="audio/mpeg">
+        </audio>
+        <img src="images/Anime3.jpg" alt="Battle Tendency" id="animeImg">
+      </div>
+    </div>
+
+    <div class="anime-buttons">
+      <a href="battle_tendency.html" class="anime-btn prev">← Попередня частина</a>
+      <a href="diamond_unbreakable.html" class="anime-btn next">Наступна частина →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const sound = document.getElementById("sound");
+  const img = document.getElementById("animeImg");
+
+  img.addEventListener("click", () => {
+    if (sound.paused) {
+      sound.play();
+    } else {
+      sound.pause();
+    }
+  });
+</script>
+
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Hirohiko Araki</div>
+                <p>Офіційний фан-сайт присвячений творчості Hirohiko Araki</p>
+                <p>Карабінович Василь,  Україна</p>
+                <p>Email:<a href="mailto:vasyl.karabinovych.pp.2024@lpnu.ua"> vasyl.karabinovych.pp.2024@lpnu.ua </a> | Телефон: <a href="tel:+380985134930"> +380985134930</a></p>
+                <div class="social-links">
+                    <a href="https://discord.gg/YS9CTFT9">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/stup1duck?igsh=NTkxc3Z2a3RzYzNi&utm_source=qr">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@stupjduck?_t=ZM-8zilg0owb0X&_r=1">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; ​2025 Мій сайт. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

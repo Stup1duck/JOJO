@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoJolands</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+     <div class="logo fade-in">
+    <a href="index.html">
+    <img src="images/logo.svg" alt="Лого">
+    </a>
+  </div>
+
+  <nav class="menu fade-in" id="menu">
+    <a href="index.html">Головна</a>
+      <div class="menu-item">
+    <a href="jojo.html">Джоджо ▾</a>
+    <div class="dropdown">
+      <a href="phantom_blood.html">Phantom Blood</a>
+      <a href="battle_tendency.html">Battle Tendency</a>
+      <a href="stardust_crusaders.html">Stardust Crusaders</a>
+      <a href="diamond_unbreakable.html">Diamond is Unbreakable</a>
+      <a href="golden_wind.html">Golden Wind</a>
+      <a href="stone_ocean.html">Stone Ocean</a>
+      <a href="steel_ball_run.html">Steel Ball Run</a>
+      <a href="jojolion.html">JoJolion</a>
+      <a href="jojolands.html">JoJolands</a>
+    </div>
+  </div>
+    <a href="about.html">Про мене</a>
+    <a href="brand.html">Бренди</a>
+  </nav>
+    </header>
+<section class="Anime">
+  <div class="container">
+    <div class="anime-content">
+      <div class="anime-text">
+        <h2>Jojolands</h2>
+        <p>
+          Дев'ята частина франшизи манґи Химерні пригоди ДжоДжо авторства Хірохіко Аракі. Манґа почала публікуватися Shueisha у журналі Ultra Jump з 17 лютого 2023 року[1]. Основна дія манґи відбувається на Гаваях у 2020-х роках. Головний герой — Джодіо Джостар, підліток-ґанґстер, який має намір розбагатіти.
+        </p><br>
+        <h3>Сюжет</h3>
+        <p>
+          Дія манґи відбувається в альтернативному всесвіті JoJo's Bizarre Adventure, тобто є сиквелом Steel Ball Run та JoJolion. 
+          Джодіо Джостар разом зі своєю сім'єю живе на острові Оаху, в Гаваях і хоче розбагатіти. 
+          Меріл Мей Ці, директор середньої школи, яку відвідують Джодіо, його брат Драґона Джостар і однокласник-клептоман Пако Лабурантес, втягує героїв у злочинну діяльність. 
+          На цей раз новим завданням для героїв є викрадення дорогоцінного каменю у одного прибулого японця.
+        </p>
+      </div>
+
+      <div class="anime-image">
+        <audio id="sound">
+          <source src="sounds/part9.mp3" type="audio/mpeg">
+        </audio>
+        <img src="images/Anime9.jpg" alt="Battle Tendency" id="animeImg">
+      </div>
+    </div>
+
+    <div class="anime-buttons">
+      <a href="jojolion.html" class="anime-btn prev">← Попередня частина</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const sound = document.getElementById("sound");
+  const img = document.getElementById("animeImg");
+
+  img.addEventListener("click", () => {
+    if (sound.paused) {
+      sound.play();
+    } else {
+      sound.pause();
+    }
+  });
+</script>
+
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Hirohiko Araki</div>
+                <p>Офіційний фан-сайт присвячений творчості Hirohiko Araki</p>
+                <p>Карабінович Василь,  Україна</p>
+                <p>Email:<a href="mailto:vasyl.karabinovych.pp.2024@lpnu.ua"> vasyl.karabinovych.pp.2024@lpnu.ua </a> | Телефон: <a href="tel:+380985134930"> +380985134930</a></p>
+                <div class="social-links">
+                    <a href="https://discord.gg/YS9CTFT9">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/stup1duck?igsh=NTkxc3Z2a3RzYzNi&utm_source=qr">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@stupjduck?_t=ZM-8zilg0owb0X&_r=1">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; ​2025 Мій сайт. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

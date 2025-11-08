@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ДжоДжо</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+     <div class="logo fade-in">
+    <a href="index.html">
+    <img src="images/logo.svg" alt="Лого">
+    </a>
+  </div>
+
+  <nav class="menu fade-in" id="menu">
+    <a href="index.html">Головна</a>
+      <div class="menu-item">
+    <a href="jojo.html">Джоджо ▾</a>
+    <div class="dropdown">
+      <a href="phantom_blood.html">Phantom Blood</a>
+      <a href="#">Battle Tendency</a>
+      <a href="#">Stardust Crusaders</a>
+      <a href="#">Diamond is Unbreakable</a>
+      <a href="#">Golden Wind</a>
+      <a href="#">Stone Ocean</a>
+      <a href="#">Steel Ball Run</a>
+      <a href="#">JoJolion</a>
+      <a href="#">JoJolands</a>
+    </div>
+  </div>
+    <a href="about.html">Про мене</a>
+    <a href="brand.html">Бренди</a>
+  </nav>
+    </header>
+
+  <section id="jojo" class="jojo-section">
+    <div class="container">
+      <h2 class="section-title">ДжоДжо</h2>
+
+      <div class="jojo-grid">
+        <a href="phantom_blood.html" class="jojo-item">
+          <img src="images/part1.jpg" alt="Phantom Blood">
+          <p>Phantom Blood</p>
+        </a>
+        <a href="battle_tendency.html" class="jojo-item">
+          <img src="images/part2.jpg" alt="Battle Tendency">
+          <p>Battle Tendency</p>
+        </a>
+        <a href="stardust_crusaders.html" class="jojo-item">
+          <img src="images/part3.jpg" alt="Stardust Crusaders">
+          <p>Stardust Crusaders</p>
+        </a>
+        <a href="diamond_unbreakable.html" class="jojo-item">
+          <img src="images/part4.jpg" alt="Diamond Is Unbreakable">
+          <p>Diamond Is Unbreakable</p>
+        </a>
+        <a href="golden_wind.html" class="jojo-item">
+          <img src="images/part5.jpg" alt="Golden Wind">
+          <p>Golden Wind</p>
+        </a>
+        <a href="stone_ocean.html" class="jojo-item">
+          <img src="images/part6.jpg" alt="Stone Ocean">
+          <p>Stone Ocean</p>
+        </a>
+        <a href="steel_ball_run.html" class="jojo-item">
+          <img src="images/part7.jpg" alt="Steel Ball Run">
+          <p>Steel Ball Run</p>
+        </a>
+        <a href="jojolion.html" class="jojo-item">
+          <img src="images/part8.jpg" alt="JoJolion">
+          <p>JoJolion</p>
+        </a>
+        <a href="jojo_lands.html" class="jojo-item">
+          <img src="images/part9.jpg" alt="The JoJoLands">
+          <p>The JoJoLands</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+   <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Hirohiko Araki</div>
+                <p>Офіційний фан-сайт присвячений творчості Hirohiko Araki</p>
+                <p>Карабінович Василь,  Україна</p>
+                <p>Email:<a href="mailto:vasyl.karabinovych.pp.2024@lpnu.ua"> vasyl.karabinovych.pp.2024@lpnu.ua </a> | Телефон: <a href="tel:+380985134930"> +380985134930</a></p>
+                <div class="social-links">
+                    <a href="https://discord.gg/YS9CTFT9">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/stup1duck?igsh=NTkxc3Z2a3RzYzNi&utm_source=qr">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@stupjduck?_t=ZM-8zilg0owb0X&_r=1">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; ​2025 Мій сайт. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const items = document.querySelectorAll('.jojo-item');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      }, { threshold: 0.2 });
+
+      items.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>

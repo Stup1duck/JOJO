@@ -1,0 +1,741 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === BASE === */
+body {
+  font-family: 'Lobster', cursive;
+  background: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* === HEADER === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.85);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.logo img {
+  height: 60px;
+}
+
+/* === Головне меню === */
+.menu {
+  display: flex;
+  gap: 25px;
+  position: relative;
+}
+
+/* Верхній рівень меню */
+.menu > a,
+.menu > .menu-item > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* Підкреслення при наведенні */
+.menu > a::after,
+.menu > .menu-item > a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #e94560;
+  transition: width 0.3s;
+}
+
+/* Ефект наведення на верхній рівень */
+.menu > a:hover,
+.menu > .menu-item > a:hover {
+  color: #e94560;
+}
+
+.menu > a:hover::after,
+.menu > .menu-item > a:hover::after {
+  width: 100%;
+}
+
+/* === Випадаюче меню === */
+.menu-item {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(20, 20, 20, 0.95);
+  padding: 10px 0;
+  border-radius: 6px;
+  min-width: 230px;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+}
+
+/* Відображення при наведенні */
+.menu-item:hover .dropdown {
+  display: flex;
+}
+
+/* Пункти підменю */
+.dropdown a {
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+  font-size: 0.95em;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+/* Ефект наведення лише у dropdown */
+.dropdown a:hover {
+  background-color: #e94560;
+  color: #fff;
+}
+
+
+/* === HERO / ARAKI SECTION === */
+.Araki {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('images/Araki.png') no-repeat center center / cover;
+  transition: transform 1s ease, filter 1s ease;
+}
+
+.Araki.animate {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+.araki-content {
+  max-width: 600px;
+  margin-left: 50px;
+  transition: transform 1s ease;
+}
+
+.Araki.animate .araki-content {
+  transform: translateY(-10px);
+}
+
+.Araki h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.Araki p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #e94560;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #c53d54;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* === ANIMATION ON SCROLL === */
+.about-content > div,
+.brand-content > div,
+.section-title h2,
+.jojo-item {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+}
+
+.about-content > div.show,
+.brand-content > div.show,
+.section-title h2.show,
+.jojo-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === SECTION BASE === */
+section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  color: #e94560;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  background: #e94560;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* === ABOUT SECTION === */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  color: #e94560;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.about-image {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Соцмережі (про мене) */
+.socials a {
+  margin: 0 5px;
+  font-size: 22px;
+  text-decoration: none;
+  color: white; /* просто білі */
+}
+
+/* === BRAND SECTION === */
+.brands-intro {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.intro-box {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 50px 100px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+}
+
+.section-description {
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid #e94560;
+  margin: 60px auto;
+  width: 80%;
+}
+
+.brand-item {
+  padding: 40px 0;
+}
+
+.brand-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.brand-item.reverse .brand-content {
+  flex-direction: row-reverse;
+}
+
+.brand-image img {
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.brand-text {
+  max-width: 500px;
+}
+
+.brand-text h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #e94560;
+  margin-bottom: 15px;
+}
+
+.brand-text p {
+  font-style: italic;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+/* === GRID (JOJO STYLE) === */
+.section-title {
+  font-size: 4.5em;
+  color: #e94560;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.jojo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  column-count: 2;
+  column-gap: 25px;
+  justify-content: flex-start;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.jojo-item {
+  position: relative;
+  width: calc(50% - 15px); /* 2 у ряд */
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  break-inside: avoid;
+}
+
+.jojo-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  object-fit: cover;
+}
+
+.jojo-item:hover img {
+  transform: scale(1.05) translateY(-8px);
+  filter: brightness(1.1);
+}
+
+.jojo-item p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  margin: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.45);
+  font-weight: bold;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 4px #000;
+  transition: background 0.3s ease;
+}
+
+.jojo-item:hover p {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* === PROFILE SECTION === */
+.profile {
+  background: #1a1a1a;
+  margin: 40px 0;
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.profile-container {
+  display: flex;
+  align-items: center; /* вирівнює фото і текст по центру */
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-img img {
+  width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.profile-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-text h2 {
+  font-size: 2rem;
+  color: #e94560;
+  margin-bottom: 10px;
+}
+
+.profile-text p {
+  font-style: italic;
+  color: #ccc;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+.socials a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.15);
+}
+
+/* адаптив */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-text {
+    align-items: center;
+  }
+}
+
+
+/* === STORY & CONTACTS === */
+.story, .contacts, .Youtube {
+  background: #1a1a1a;
+  margin: 40px 0;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.story h2, .contacts h2, .Youtube h2 {
+  color: #e94560;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.contacts a {
+  color: #e94560;
+  text-decoration: none;
+}
+
+.contacts a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* === FOOTER === */
+footer {
+  background: #e94560;
+  color: white;
+  padding: 0.1rem 0;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links {
+  font-size: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #000;
+}
+
+.copyright {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* === Anime === */
+.Anime {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.anime-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.anime-image img {
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.anime-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.anime-text {
+  max-width: 500px;
+}
+
+.anime-text h2, .anime-text h3 {
+  color: #e94560;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.anime-text h2 {
+  font-size: 1.8em;
+}
+
+.anime-text h3 {
+  font-size: 1.5em;
+}
+
+.anime-text p {
+  font-style: italic;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.anime-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 700px; 
+}
+
+.anime-btn {
+  background-color: #e94560;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.anime-btn:hover {
+  background-color: #ff5f77;
+  transform: translateY(-2px);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  color: #fff;
+  max-width: 400px;
+}
+
+.modal-content p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.modal-buttons button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#yesBtn {
+  background-color: #e94560;
+  color: #fff;
+}
+
+#noBtn {
+  background-color: #444;
+  color: #fff;
+}
+
+.modal-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.profile-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.profile-img img:hover {
+  animation: bounceZoom 0.6s ease;
+  box-shadow: 0 0 25px rgba(255, 255, 0, 0.6);
+}
+
+@keyframes bounceZoom {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.15) rotate(3deg); }
+  70% { transform: scale(0.95) rotate(-2deg); }
+  100% { transform: scale(1.05); }
+}
+
+
+/* === MAP === */
+.map {
+  margin: 20px 0;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .about-content,
+  .brand-content,
+  .profile-container {
+    flex-direction: column;
+  }
+
+  .jojo-grid {
+    column-count: 1;
+  }
+
+  .Araki {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .araki-content {
+    margin: 0;
+  }
+}

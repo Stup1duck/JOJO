@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Wind</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+     <div class="logo fade-in">
+    <a href="index.html">
+    <img src="images/logo.svg" alt="Лого">
+    </a>
+  </div>
+
+  <nav class="menu fade-in" id="menu">
+    <a href="index.html">Головна</a>
+      <div class="menu-item">
+    <a href="jojo.html">Джоджо ▾</a>
+    <div class="dropdown">
+      <a href="phantom_blood.html">Phantom Blood</a>
+      <a href="battle_tendency.html">Battle Tendency</a>
+      <a href="stardust_crusaders.html">Stardust Crusaders</a>
+      <a href="diamond_unbreakable.html">Diamond is Unbreakable</a>
+      <a href="golden_wind.html">Golden Wind</a>
+      <a href="stone_ocean.html">Stone Ocean</a>
+      <a href="steel_ball_run.html">Steel Ball Run</a>
+      <a href="jojolion.html">JoJolion</a>
+      <a href="jojolands.html">JoJolands</a>
+    </div>
+  </div>
+    <a href="about.html">Про мене</a>
+    <a href="brand.html">Бренди</a>
+  </nav>
+    </header>
+<section class="Anime">
+  <div class="container">
+    <div class="anime-content">
+      <div class="anime-text">
+        <h2>Golden Wind</h2>
+        <p>
+          П'ята частина манґи JoJo's Bizarre Adventure авторства Хірохіко Аракі. Глави публікувалися в журналі Weekly Shonen Jump з 28 листопада 1995 по 23 березня 1999 року. Усього було випущено 155 розділів, зібраних потім у 17 томів манґи. Дія сюжету відбувається після подій Diamond Is Unbreakable та передує Stone Ocean.
+        </p><br>
+        <h3>Сюжет</h3>
+        <p>
+          Дія відбувається в Італії у 2001 році. Джотаро Куджо відправляє до Неаполя Коїчі Хіросе, якому доручено розшукати якогось Харуно Сіобану і отримати зразок його шкіри для генетичного дослідження у фонді «Спідваґона». Сіобана виявляється ніким іншим, як Джорно Джованною, одним із позашлюбних синів Діо (який зачав сина, вже володіючи тілом Джонатана Джостара; таким чином, Джорно також став нащадком Джостарів). Представляючись таксистом, Джорно пропонує відвезти Коїчі до міста, однак, склавши багаж у салон автомобіля, їде геть. Коїчі зупиняє спробу пограбування за допомогою свого стенда, Echoes. На подив Коїчі, Джорно теж має стенд — Gold Experience, який дозволяє йому наділяти неживі предмети життєвою енергією. Далі сюжет манґи слідує за пригодами Джорно, який ставить за мету стати босом неаполітанської мафії і позбавити місто руйнівної торгівлі наркотиками. Незабаром він вступає у впливову банду «Passione», членами якої є інші власники стендів. Пройшовши зловісну ініціацію, Джорно потрапляє до загону Бруно Буччелаті, разом з яким незабаром отримує завдання від таємничого боса «Passione» — доставити в безпеку його єдину дочку, Уну Тріш, за якою полюють і інші загони банди, які мають намір викрити особу боса та здолати.
+        </p>
+      </div>
+
+      <div class="anime-image">
+        <audio id="sound">
+          <source src="sounds/part5.mp3" type="audio/mpeg">
+        </audio>
+        <img src="images/Anime5.jpg" alt="Battle Tendency" id="animeImg">
+      </div>
+    </div>
+
+    <div class="anime-buttons">
+      <a href="diamond_unbreakable.html" class="anime-btn prev">← Попередня частина</a>
+      <a href="stone_ocean.html" class="anime-btn next">Наступна частина →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const sound = document.getElementById("sound");
+  const img = document.getElementById("animeImg");
+
+  img.addEventListener("click", () => {
+    if (sound.paused) {
+      sound.play();
+    } else {
+      sound.pause();
+    }
+  });
+</script>
+
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Hirohiko Araki</div>
+                <p>Офіційний фан-сайт присвячений творчості Hirohiko Araki</p>
+                <p>Карабінович Василь,  Україна</p>
+                <p>Email:<a href="mailto:vasyl.karabinovych.pp.2024@lpnu.ua"> vasyl.karabinovych.pp.2024@lpnu.ua </a> | Телефон: <a href="tel:+380985134930"> +380985134930</a></p>
+                <div class="social-links">
+                    <a href="https://discord.gg/YS9CTFT9">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/stup1duck?igsh=NTkxc3Z2a3RzYzNi&utm_source=qr">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@stupjduck?_t=ZM-8zilg0owb0X&_r=1">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; ​2025 Мій сайт. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

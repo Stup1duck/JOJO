@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Blood</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+     <div class="logo fade-in">
+    <a href="index.html">
+    <img src="images/logo.svg" alt="Лого">
+    </a>
+  </div>
+
+  <nav class="menu fade-in" id="menu">
+    <a href="index.html">Головна</a>
+      <div class="menu-item">
+    <a href="jojo.html">Джоджо ▾</a>
+    <div class="dropdown">
+      <a href="phantom_blood.html">Phantom Blood</a>
+      <a href="battle_tendency.html">Battle Tendency</a>
+      <a href="stardust_crusaders.html">Stardust Crusaders</a>
+      <a href="diamond_unbreakable.html">Diamond is Unbreakable</a>
+      <a href="golden_wind.html">Golden Wind</a>
+      <a href="stone_ocean.html">Stone Ocean</a>
+      <a href="steel_ball_run.html">Steel Ball Run</a>
+      <a href="jojolion.html">JoJolion</a>
+      <a href="jojolands.html">JoJolands</a>
+    </div>
+  </div>
+    <a href="about.html">Про мене</a>
+    <a href="brand.html">Бренди</a>
+  </nav>
+    </header>
+<section class="Anime">
+  <div class="container">
+    <div class="anime-content">
+      <div class="anime-text">
+        <h2>Phantom Blood</h2>
+        <p>
+        Перша частина франшизи манґи JoJo's Bizarre Adventure авторства Хірохіко Аракі. 
+        Серії публікувалися у журналі Weekly Shonen Jump 1986 року. Усього вийшло 44 розділи. 
+        У 2012 році за мотивами манґи вийшов аніме-серіал, який транслювався в Японії з 6 жовтня 2012 року по 6 квітня 2013 року.
+        </p><br>
+        <h3>Сюжет</h3>
+        <p>
+          Дія відбувається у Великій Британії в другій половині XIX століття. 
+          Даріо Брандо знаходить розбитий віз багатої людини і видає себе за рятівника. 
+          На знак подяки Джордж Джостар пізніше приймає в сім'ю сина злодія — Діо Брандо, який з першої зустрічі не злюбив Джонатана, сина Джорджа, і вирішує всіма способами зіпсувати йому життя, для чого вдається до найпідліших методів. 
+          Однак Джонатан не падає духом. Проходить 7 років; батько смертельно хворіє, але з'ясовується, що насправді Діо, який бажає отримати спадщину, підсипав вітчиму отруту. Джонатан розкриває злочин та нападає на Діо. 
+          Той вирішує випробувати на собі таємничу маску, яка перетворює його на вампіра. Маєток спалено вщент, Джонатан вирушає в подорож і зустрічається з Віллом Цеппелі, який навчає головного героя техніки «Хамон» (яп. 波紋, хамон, букв. бриж, кола на воді), за допомогою якої можна перемогти нежить, а також Робертом Спідвагоном, колишнім розбійником. 
+          Так Джонатан, знаходячи нових союзників, розпочинає боротьбу проти Діо та його нових слуг-мерців. Діо спочатку звертає Джека Потрошителя, а потім давно померлих лицарів Таркуса та Бруфорда.
+          </p></br>
+         <p>
+          Після перемоги над Діо, ДжоДжо та Еріна Пендлтон вирушають у весільну подорож до Америки. 
+          Однак Ван Чан зберіг голову Діо і проникнув разом з нею на корабель, де були ДжоДжо та Еріна. 
+          Діо зумів поранити ДжоДжо в горло, тому він не міг дихати. Зібравши рештки сил, ДжоДжо зупиняє двигун корабля. 
+          Корабель вибухає, ДжоДжо і Діо йдуть на дно, а Еріна рятується з корабля разом із дитиною, чию матір вбили на кораблі.
+        </p>
+      </div>
+
+      <div class="anime-image">
+        <audio id="sound">
+          <source src="sounds/part1.mp3" type="audio/mpeg">
+        </audio>
+        <img src="images/Anime1.jpg" alt="Battle Tendency" id="animeImg">
+      </div>
+    </div>
+
+    <div class="anime-buttons">
+      <a href="battle_tendency.html" class="anime-btn next">Наступна частина →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const sound = document.getElementById("sound");
+  const img = document.getElementById("animeImg");
+
+  img.addEventListener("click", () => {
+    if (sound.paused) {
+      sound.play();
+    } else {
+      sound.pause();
+    }
+  });
+</script>
+
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Hirohiko Araki</div>
+                <p>Офіційний фан-сайт присвячений творчості Hirohiko Araki</p>
+                <p>Карабінович Василь,  Україна</p>
+                <p>Email:<a href="mailto:vasyl.karabinovych.pp.2024@lpnu.ua"> vasyl.karabinovych.pp.2024@lpnu.ua </a> | Телефон: <a href="tel:+380985134930"> +380985134930</a></p>
+                <div class="social-links">
+                    <a href="https://discord.gg/YS9CTFT9">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/stup1duck?igsh=NTkxc3Z2a3RzYzNi&utm_source=qr">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@stupjduck?_t=ZM-8zilg0owb0X&_r=1">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; ​2025 Мій сайт. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

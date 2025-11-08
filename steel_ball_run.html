@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steel Ball Run</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+     <div class="logo fade-in">
+    <a href="index.html">
+    <img src="images/logo.svg" alt="Лого">
+    </a>
+  </div>
+
+  <nav class="menu fade-in" id="menu">
+    <a href="index.html">Головна</a>
+      <div class="menu-item">
+    <a href="jojo.html">Джоджо ▾</a>
+    <div class="dropdown">
+      <a href="phantom_blood.html">Phantom Blood</a>
+      <a href="battle_tendency.html">Battle Tendency</a>
+      <a href="stardust_crusaders.html">Stardust Crusaders</a>
+      <a href="diamond_unbreakable.html">Diamond is Unbreakable</a>
+      <a href="golden_wind.html">Golden Wind</a>
+      <a href="stone_ocean.html">Stone Ocean</a>
+      <a href="steel_ball_run.html">Steel Ball Run</a>
+      <a href="jojolion.html">JoJolion</a>
+      <a href="jojolands.html">JoJolands</a>
+    </div>
+  </div>
+    <a href="about.html">Про мене</a>
+    <a href="brand.html">Бренди</a>
+  </nav>
+    </header>
+<section class="Anime">
+  <div class="container">
+    <div class="anime-content">
+      <div class="anime-text">
+        <h2>Steel Ball Run</h2>
+        <p>
+          Перезапуск та сьома частина франшизи манґи Химерні пригоди ДжоДжо авторства Хірохіко Аракі. Дія відбувається в 1890 році, протагоністи — Джайро Цеппелі, досвідчений колишній кат, і Джонні Джостар, колишній жокей, який був підстрелений і став інвалідом-візочником, втративши свою славу та багатство. Вони, поряд з іншими, змагаються у титульній крос-континентальній гонці за 50 мільйонів доларів.
+</p></br>
+         <p>
+Перші 24 розділи спочатку публікувалися в журналі Weekly Shōnen Jump під назвою Steel Ball Run. Незважаючи на схожість імен персонажів, підтвердження, що твір відноситься до Химерні пригоди ДжоДжо, не було, але після перенесення публікації в журнал Ultra Jump в 2005 році, манґа була офіційно визнана сьомою частиною JoJo's Bizarre Adventure, події якої розгортаються в альтернативному всесвіті. Вихід історії тривав до 2011 року. Усього було випущено 95 розділів, зібраних потім у 24 томи манґи.
+</p></br>
+         <p>
+Steel Ball Run не є продовженням попередніх частин, а є перезапуском всесвіту Химерні пригоди ДжоДжо і передує JoJolion, її дія є альтернативною реальністю перших трьох частин — Phantom Blood, Battle Tendency і Stardust Crusaders.
+        </p><br>
+        <h3>Сюжет</h3>
+        <p>
+         Дія відбувається в альтернативному всесвіті, наприкінці XIX століття, де рівень технологічного прогресу трохи випереджає такий у реальному світі, а також люди мають інші стандарти моди та зовнішності. Джайро Цеппелі вирушає до США, щоб взяти участь і перемогти в перегонах Steel Ball Run, щоб король його держави оголосив амністію, щоб урятувати одного хлопчика від страти. У гонку також вступає Джонні Джостар, бажаючи дізнатися про силу Джайро і знову почати ходити. Переможцю гонки Steel Ball Run обіцяна нагорода у 50 мільйонів доларів. За гонкою слідкує президент США Фані Валентайн, який має намір знайти частини трупа, здатні наділити людину силою стенда. Однак їх знаходять Джайро та Джонні, і тепер головні герої мають захищатися від таємних агентів, які працюють на президента.
+        </p>
+      </div>
+
+      <div class="anime-image">
+        <audio id="sound">
+          <source src="sounds/part7.mp3" type="audio/mpeg">
+        </audio>
+        <img src="images/Anime7.jpg" alt="Battle Tendency" id="animeImg">
+      </div>
+    </div>
+
+    <div class="anime-buttons">
+      <a href="stone_ocean.html" class="anime-btn prev">← Попередня частина</a>
+      <a href="jojolion.html" class="anime-btn next">Наступна частина →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const sound = document.getElementById("sound");
+  const img = document.getElementById("animeImg");
+
+  img.addEventListener("click", () => {
+    if (sound.paused) {
+      sound.play();
+    } else {
+      sound.pause();
+    }
+  });
+</script>
+
+         <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Hirohiko Araki</div>
+                <p>Офіційний фан-сайт присвячений творчості Hirohiko Araki</p>
+                <p>Карабінович Василь,  Україна</p>
+                <p>Email:<a href="mailto:vasyl.karabinovych.pp.2024@lpnu.ua"> vasyl.karabinovych.pp.2024@lpnu.ua </a> | Телефон: <a href="tel:+380985134930"> +380985134930</a></p>
+                <div class="social-links">
+                    <a href="https://discord.gg/YS9CTFT9">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/stup1duck?igsh=NTkxc3Z2a3RzYzNi&utm_source=qr">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@stupjduck?_t=ZM-8zilg0owb0X&_r=1">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; ​2025 Мій сайт. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

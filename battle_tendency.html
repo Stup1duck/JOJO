@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Tendency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+     <div class="logo fade-in">
+    <a href="index.html">
+    <img src="images/logo.svg" alt="Лого">
+    </a>
+  </div>
+
+  <nav class="menu fade-in" id="menu">
+    <a href="index.html">Головна</a>
+      <div class="menu-item">
+    <a href="jojo.html">Джоджо ▾</a>
+    <div class="dropdown">
+      <a href="phantom_blood.html">Phantom Blood</a>
+      <a href="battle_tendency.html">Battle Tendency</a>
+      <a href="stardust_crusaders.html">Stardust Crusaders</a>
+      <a href="diamond_unbreakable.html">Diamond is Unbreakable</a>
+      <a href="golden_wind.html">Golden Wind</a>
+      <a href="stone_ocean.html">Stone Ocean</a>
+      <a href="steel_ball_run.html">Steel Ball Run</a>
+      <a href="jojolion.html">JoJolion</a>
+      <a href="jojolands.html">JoJolands</a>
+    </div>
+  </div>
+    <a href="about.html">Про мене</a>
+    <a href="brand.html">Бренди</a>
+  </nav>
+    </header>
+<section class="Anime">
+  <div class="container">
+    <div class="anime-content">
+      <div class="anime-text">
+        <h2>Battle Tendency</h2>
+        <p>
+          Друга частина франшизи JoJo's Bizarre Adventure, створена Хірохіко Аракі і що складається з 69 розділів, що випускалися в журналі Weekly Shonen Jump з 1987 по 1989 рік. 
+          Пізніше манґа була зібрана у 7 томів. Дія манґи відбувається після Phantom Blood і до Stardust Crusaders. 
+          У 2012 році за мотивами манґи було випущено аніме-серіал, який випускався японським телеканалом з 5 жовтня 2012 року по 5 квітня 2013 року.
+        </p><br>
+        <h3>Сюжет</h3>
+        <p>
+          1938 рік. Під час експедиції нацистів у Мексиці в ацтекських руїнах було виявлено безліч «вампірських масок», здатних перетворювати людей на вампірів, а також скам'яніла людина, «вмурована» в колону. 
+          Дія переноситься до Нью-Йорка. Лабораторію виявляє вже постарілий Спідвагон, і виявляється схопленим. 
+          Його вирушає шукати Джозеф Джостар, онук Джонатана, і, виявивши лабораторію, бачить у них «Людей-із-колони», яких нацисти пробуджують за допомогою крові в'язнів. 
+          Пробуджена істота вбиває всіх працівників лабораторії, проте зазнає поразки від Джозефа. 
+          Тим часом прокидаються ще три давні Людини-з-колон, які мають намір знайти стародавній «червоний камінь Ейші» для того, щоб стати досконалими істотами і повернути панування над людством. 
+          Джозефу доведеться боротися проти них, а також познайомитися зі своєю матір'ю, яка, як думав Джозеф, уже давно померла.
+        </p>
+      </div>
+
+      <div class="anime-image">
+        <audio id="sound">
+          <source src="sounds/part2.mp3" type="audio/mpeg">
+        </audio>
+        <img src="images/Anime2.jpg" alt="Battle Tendency" id="animeImg">
+      </div>
+    </div>
+
+    <div class="anime-buttons">
+      <a href="phantom_blood.html" class="anime-btn prev">← Попередня частина</a>
+      <a href="stardust_crusaders.html" class="anime-btn next">Наступна частина →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const sound = document.getElementById("sound");
+  const img = document.getElementById("animeImg");
+
+  img.addEventListener("click", () => {
+    if (sound.paused) {
+      sound.play();
+    } else {
+      sound.pause();
+    }
+  });
+</script>
+
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Hirohiko Araki</div>
+                <p>Офіційний фан-сайт присвячений творчості Hirohiko Araki</p>
+                <p>Карабінович Василь,  Україна</p>
+                <p>Email:<a href="mailto:vasyl.karabinovych.pp.2024@lpnu.ua"> vasyl.karabinovych.pp.2024@lpnu.ua </a> | Телефон: <a href="tel:+380985134930"> +380985134930</a></p>
+                <div class="social-links">
+                    <a href="https://discord.gg/YS9CTFT9">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/stup1duck?igsh=NTkxc3Z2a3RzYzNi&utm_source=qr">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@stupjduck?_t=ZM-8zilg0owb0X&_r=1">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; ​2025 Мій сайт. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

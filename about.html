@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про мене</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+     <div class="logo fade-in">
+    <a href="index.html">
+    <img src="images/logo.svg" alt="Лого">
+    </a>
+  </div>
+
+  <nav class="menu fade-in" id="menu">
+    <a href="index.html">Головна</a>
+      <div class="menu-item">
+    <a href="jojo.html">Джоджо ▾</a>
+    <div class="dropdown">
+      <a href="phantom_blood.html">Phantom Blood</a>
+      <a href="battle_tendency.html">Battle Tendency</a>
+      <a href="stardust_crusaders.html">Stardust Crusaders</a>
+      <a href="diamond_unbreakable.html">Diamond is Unbreakable</a>
+      <a href="golden_wind.html">Golden Wind</a>
+      <a href="stone_ocean.html">Stone Ocean</a>
+      <a href="steel_ball_run.html">Steel Ball Run</a>
+      <a href="jojolion.html">JoJolion</a>
+      <a href="jojolands.html">JoJolands</a>
+    </div>
+  </div>
+    <a href="about.html">Про мене</a>
+    <a href="brand.html">Бренди</a>
+  </nav>
+    </header>
+
+<main>
+  <section class="profile">
+    <div class="profile-container">
+      <div class="profile-img">
+        <audio id="sound">
+          <source src="sounds/Chase.mp3" type="audio/mpeg">
+        </audio>
+        <img src="images/duck.jpg" alt="Stupiduck" id="profileImg">
+        <p class="caption">Тицьни на фотку, точно не пожалієш ;)</p>
+      </div>
+      <div class="profile-text">
+        <h2>Stupiduck</h2>
+        <p>
+          Привіт, я Василь Карабінович, але всі мене називають Качкою. 
+          Я навчаюсь у Львівській політехніці, на спеціальності ІТ-2 
+          Інженерія програмного забезпечення 
+          (Проєктування і програмування інтелектуальних систем та пристроїв).
+        </p>
+        <div class="socials">
+          <a href="https://discord.gg/YS9CTFT9"><i class="fa-brands fa-discord"></i></a>
+          <a href="https://www.instagram.com/stup1duck?igsh=NTkxc3Z2a3RzYzNi&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@stupjduck?_t=ZM-8zilg0owb0X&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story">
+    <h2>Моя історія</h2>
+    <p>
+      Я з дитинства любив малювати, тому хотів поступити на графічного дизайнера. 
+      Але мої плани зруйнував страх, що я не здам творчий конкурс. 
+      Після цього я вирішив поступити на програмування, але продовжую малювати для себе. 
+      Можливо в майбутньому я покращу свої навички і все-таки навчуся гарно малювати, 
+      але сумніваюся що це перетворю у свою майбутню роботу. 
+      Не знаю, що ще тут написати, але якщо ви маєте ціль або мрію, то йдіть до неї :)
+    </p>
+  </section>
+
+  <section class="Youtube">
+    <h2>Моє перше відео на ютубі</h2>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/Poh0J3AqFJw?si=kyps9xndq_RxQoSb"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </section>
+
+  <section class="contacts">
+    <h2>Контакти</h2>
+    <p>
+      Якщо ви хочете зі мною зв’язатися то на сайті є мої соц.мережі та контакти.
+    </p>
+    <p>
+      <a href="mailto:vasyl.karabinovych.pp.2024@lpnu.ua">vasyl.karabinovych.pp.2024@lpnu.ua</a><br>
+      <a href="tel:+380985134930">+380985134930</a>
+    </p>
+  </section>
+
+  <section class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.9995392770893!2d24.535!3d48.807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4735f0a64a85e0b1%3A0xabcdef!2sBohorodchany!5e0!3m2!1sen!2sua!4v1691234567890"
+      width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"></iframe>
+  </section>
+</main>
+
+<!-- Модальне вікно -->
+<div id="confirmModal" class="modal">
+  <div class="modal-content">
+    <p>Ти точно хочеш це почути?</p>
+    <div class="modal-buttons">
+      <button id="yesBtn">Так</button>
+      <button id="noBtn">Ні</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sound = document.getElementById("sound");
+    const img = document.getElementById("profileImg");
+    const modal = document.getElementById("confirmModal");
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+
+    img.addEventListener("click", () => {
+      modal.style.display = "flex";
+    });
+
+    yesBtn.addEventListener("click", () => {
+      sound.play();
+      modal.style.display = "none";
+    });
+
+    noBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+</script>
+
+
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Hirohiko Araki</div>
+                <p>Офіційний фан-сайт присвячений творчості Hirohiko Araki</p>
+                <p>Карабінович Василь,  Україна</p>
+                <p>Email:<a href="mailto:vasyl.karabinovych.pp.2024@lpnu.ua"> vasyl.karabinovych.pp.2024@lpnu.ua </a> | Телефон: <a href="tel:+380985134930"> +380985134930</a></p>
+                <div class="social-links">
+                    <a href="https://discord.gg/YS9CTFT9">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/stup1duck?igsh=NTkxc3Z2a3RzYzNi&utm_source=qr">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@stupjduck?_t=ZM-8zilg0owb0X&_r=1">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; ​2025 Мій сайт. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
