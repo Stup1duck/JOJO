@@ -486,7 +486,7 @@ section {
 
 
 /* === STORY & CONTACTS === */
-.story, .contacts, .Youtube {
+.story, .contacts, .Youtube, .instagram {
   background: #1a1a1a;
   margin: 40px 0;
   padding: 40px;
@@ -495,7 +495,7 @@ section {
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-.story h2, .contacts h2, .Youtube h2 {
+.story h2, .contacts h2, .Youtube h2, .instagram h2 {
   color: #e94560;
   font-size: 26px;
   margin-bottom: 15px;
@@ -739,3 +739,4 @@ footer a {
     margin: 0;
   }
 }
+
